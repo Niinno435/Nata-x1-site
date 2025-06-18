@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NATA Drone - Jungle Vision</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      color: #d4f4dd;
+      line-height: 1.6;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .leaf {
+      position: absolute;
+      width: 100px;
+      animation: float 8s ease-in-out infinite;
+      opacity: 0.7;
+      z-index: 1;
+    }
+
+    .leaf.left {
+      left: 0;
+      top: 10%;
+      transform: rotate(-20deg);
+    }
+
+    .leaf.right {
+      right: 0;
+      top: 20%;
+      transform: rotate(30deg);
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(20px) rotate(10deg); }
+      100% { transform: translateY(0) rotate(0deg); }
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 40, 20, 0.8);
+      border-bottom: 2px solid #4caf50;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      color: #a8ffbd;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      position: relative;
+      background: linear-gradient(to bottom, rgba(0, 50, 0, 0.4), rgba(0, 20, 0, 0.8));
+    }
+
+    .hero h1 {
+      font-size: 6em;
+      z-index: 2;
+      color: #aaffcc;
+      text-shadow: 0 0 10px #4caf50, 0 0 30px #2e8b57;
+    }
+
+    section {
+      padding: 100px 20px 80px;
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+      background-color: rgba(0, 40, 20, 0.7);
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    section:nth-child(even) {
+      background-color: rgba(0, 60, 30, 0.6);
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #66ff99;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #002a14;
+      color: #aaffcc;
+      border-top: 1px solid #4caf50;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(to bottom, #001a0d88, #001a0d);
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+<!-- Feuilles animées jungle -->
+<img class="leaf left" src="images-Photoroom.png" alt="feuille jungle">
+<img class="leaf right" src="images-Photoroom.png" alt="feuille jungle">
+<img class="leaf left" style="top: 30%; animation-delay: 2s;" src="images-Photoroom.png" alt="feuille jungle">
+<img class="leaf right" style="top: 50%; animation-delay: 4s;" src="images-Photoroom.png" alt="feuille jungle">
+
+  <div class="overlay"></div>
+
+  <header>
+    <img src="https://th.bing.com/th/id/OIP.cmaMqegfFXOI6SovKlYRUAHaHY?rs=1&pid=ImgDetMain" alt="NATA DRONE.com">
+    <nav>
+      <a href="#qui">Qui sommes-nous</a>
+      <a href="#natax1">Le NATA X1</a>
+      <a href="#precommande">Précommande</a>
+      <a href="#invest">Investissement</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>NATA DRONE</h1>
+  </section>
+
+  <section id="qui">
+    <h2>Qui sommes-nous</h2>
+    <p>Créée en juin 2025, NATA Drone est une startup française spécialisée dans la conception de drones innovants pour les environnements urbains et hostiles. Née d'une fusion entre passion aéronautique et vision technologique, NATA incarne l’avant-garde du drone autonome.
+    Notre équipe est composée d'ingénieurs, de codeurs, de designers et de génies du marketing. Nos jeunes prodiges sont prêts à tout pour propulser NATA DRONE sur la scène de l'aéronautique européenne et bientôt internationale.</p>
+  </section>
+
+  <section id="natax1">
+    <h2>Le NATA X1</h2>
+    <p>Premier né de notre laboratoire, le NATA X1 est un drone haute performance, rapide, polyvalent, léger et ultra-solide. Des rotors puissants et une technologie de pointe toujours à la hauteur grâce à notre partenariat avec NXP qui nous fournit ses meilleures puces pour toujours avoir une longueur d'avance sur la concurrence.</p>
+  </section>
+
+  <section id="precommande">
+    <h2>Précommandez maintenant</h2>
+    <p>Rejoignez les pionniers de la technologie en précommandant le NATA X1 dès aujourd’hui. Quantités limitées — chaque unité est numérotée et livrée dans une box NATA premium. Un accompagnement support client est offert à vie pour les premiers qui sauront flairer le potentiel de notre technologie. Réservez votre futur dès maintenant sur notre site officiel.</p>
+  </section>
+
+  <section id="invest">
+    <h2>Investir dans NATA</h2>
+    <p>Nous recherchons des investisseurs visionnaires prêts à bâtir avec nous l’avenir du drone intelligent. Rejoignez un projet éthique, technologique et durable. Des rendements sont prévus dès la seconde génération de drones, avec avantages exclusifs.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 contact@nata-drone.fr<br>
+    ☎️ +33 7 67 00 02 28<br>
+    📍 Sophia Antipolis, France</p>
+  </section>
+
+  <footer>
+    &copy; 2025 NATA Drone / NXP Code - Tous droits réservés.
+  </footer>
+
+  <audio autoplay loop hidden>
+    <source src="https://cdn.pixabay.com/audio/2023/03/23/audio_6308c3f2a7.mp3" type="audio/mp3">
+  </audio>
+</body>
+</html>
